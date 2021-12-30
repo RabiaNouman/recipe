@@ -18,8 +18,8 @@ const Recipe = ({ title, cal, image, ingredients }) => {
                     {title}
                   </h4>
                   <ol className="card-text">
-                    {ingredients.map((i) => (
-                      <li>{i.text}</li>
+                    {ingredients.map((i, index) => (
+                      <li key={index}>{i.text}</li>
                     ))}
                   </ol>
                 </div>
