@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import style from "../recipe.module.css";
 
 const Recipe = ({ title, cal, image, ingredients }) => {
-  console.log(ingredients);
   return (
     <div className={style.recipe}>
       <div className="container-fluid">
