@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "../recipe.module.css";
 
 const Recipe = ({ title, cal, image, ingredients }) => {
