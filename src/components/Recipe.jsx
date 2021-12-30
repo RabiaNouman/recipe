@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import style from "../recipe.module.css";
 
 const Recipe = ({ title, cal, image, ingredients }) => {
+  console.log(ingredients);
   return (
     <div className={style.recipe}>
       <div className="container-fluid">
@@ -16,13 +17,11 @@ const Recipe = ({ title, cal, image, ingredients }) => {
                   <h4 className="card-title" style={{ fontSize: "20px" }}>
                     {title}
                   </h4>
-                  <p className="card-text">
-                    <ol>
-                      {ingredients.map((i) => (
-                        <li>{i.text}</li>
-                      ))}
-                    </ol>
-                  </p>
+                  <ol className="card-text">
+                    {ingredients.map((i) => (
+                      <li>{i.text}</li>
+                    ))}
+                  </ol>
                 </div>
               </div>
               <div className="card-footer" style={{ padding: "10px" }}>
